@@ -18,6 +18,7 @@
      /* others */
      --borders-box: #EEEEEE;
      --icon-color: #AFB1B8;
+     --btn-hover-color: #188ce8;
 
      /* animation */
      --anim:  250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -242,7 +243,7 @@
             }
         .button-hero:hover,
         .button-hero:focus {
-          background-color: #188ce8;
+          background-color: var(--btn-hover-color);
         }
         .btn {
             padding: 6px 22px;
@@ -763,7 +764,7 @@
             }
             .form-btn:hover,
             .form-btn:focus {
-              background-color: #188ce8;
+              background-color: var(--btn-hover-color);
 
 
             }
@@ -826,9 +827,16 @@
               padding: 0;
               border: 1px solid rgba(0, 0, 0, 0.1);
               cursor: pointer;
+              transition: var(--anim);
+              
+
 
 
           
+            }
+            .modal-close-btn:hover,
+            .modal-close-btn:focus +.close-btn-pic {
+              fill: var(--accent-color);
             }
             .close-btn-pic {
               width: 18px;
@@ -884,6 +892,7 @@
                 top: 55%;
                 left: 12px;
                 fill: var(--light-theme-txt);
+                transition: var(--anim);
               }
               .modal-form-input-comment {
                 resize: none;
@@ -892,7 +901,7 @@
                 padding: 12px 16px;
                 color: var(--content-txt);
                 background-color: transparent;
-                border: 1px px solid rgba(33, 33, 33, 0.2);
+                border: 1px solid rgba(33, 33, 33, 0.2);
                 border-radius: 4px;
                 transition: outline var(--anim), border-color var(--anim);
                 }
@@ -906,7 +915,11 @@
               .modal-form-input-comment:focus {
                 outline: transparent;
                 border-color: var(--accent-color);
+   
                }
+             .modal-form-input:focus +.modal-form-icon {
+              fill: var(--accent-color);
+             }
              /* checkbox */
               .visually-hidden {
                 visibility: hidden;
@@ -949,7 +962,7 @@
 
 
               }
-              .modal-form-check:checked+.form-icon-check {
+              .modal-form-check:checked +.form-icon-check {
                background-color: var(--accent-color);
                outline-color: var(--accent-color);
                border-color: var(--accent-color);
@@ -961,12 +974,12 @@
                 }
                 .btn-checkbox:hover,
                 .btn-checkbox:focus {
-                  background-color: #188ce8;
+                  background-color: var(--btn-hover-color);
                 }
                 .form-button-text {
                   color: var(--dark-theme-txt);
                 }
-              
+                
           
             
 
