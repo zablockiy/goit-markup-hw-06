@@ -761,11 +761,6 @@
               pointer-events: none;
               transition: opacity var(--anim), visibility var(--anim);
             }
-            .modal-text {
-              font-style: italic;
-              font-size: 30px;
-              text-align: center;
-              margin-top: 50%;
-            }
+            
 
 
