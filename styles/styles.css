@@ -964,7 +964,7 @@
               }
               .modal-form-check:checked +.form-icon-check {
                background-color: var(--accent-color);
-               outline-color: var(--accent-color);
+               
                border-color: var(--accent-color);
                 }
                 .btn-checkbox {
