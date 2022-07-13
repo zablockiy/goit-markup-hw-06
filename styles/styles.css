@@ -711,7 +711,7 @@
              /* форма підписки в футері */
              .subscrible {
               display: block;
-              margin-left: 93px;
+              margin-left: auto;
              }
              .form {
               display: flex;
@@ -800,11 +800,12 @@
             }
             .modal {
               position: absolute;
+              padding: 40px;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
               width: 528px;
-              height: 581px;
+              
               background-color:var(--white-theme-bg);
               box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
               border-radius: 4px;
@@ -849,11 +850,9 @@
               pointer-events: none;
               transition: opacity var(--anim), visibility var(--anim);
             }
-            .modal-area {
-              padding: 0 40px;
-            }
+            
             .modal-title {
-              margin-top: 40px;
+              
               margin-bottom: 12px;
               font-family: 'Roboto';
               font-style: normal;
@@ -872,6 +871,7 @@
               margin-bottom: 20px;
             }
             .modal-form-input {
+              
               width: 100%;
               height: 40px;
               padding: 12px 15px 12px 42px;
@@ -886,6 +886,8 @@
               }
               .label-title {
                 color: var(--content-txt);
+                
+                
               }
               .modal-form-icon {
                 position: absolute;
@@ -968,7 +970,12 @@
                border-color: var(--accent-color);
                 }
                 .btn-checkbox {
-                  margin-left: 165px;
+                  
+                  width: 200px;
+                  height: 50px;
+                  margin: 0 124px;
+                  
+                
                   background-color: var(--accent-color);
                   
                 }
